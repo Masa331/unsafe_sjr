@@ -33,5 +33,9 @@ module UnsafeSjr
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.hosts << 'alice'
+    config.hosts << 'bob'
+
+    config.session_store :cookie_store, key: 'ujs', same_site: 'None'
   end
 end

@@ -7,9 +7,12 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
   </head>
 
   <body>
+    fobar
+    <!-- <p>Logged in as: <%#= @user.username %></p> -->
     <%= yield %>
   </body>
 </html>
